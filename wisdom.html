@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>追随他的心</title>
+    <style>
+        .nav {
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+            padding: 15px 0;
+        }
+        
+        .nav-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+            font-family: "Palatino", "Georgia", serif;
+        }
+        
+        .nav-links a {
+            margin-left: 25px;
+            color: #666;
+            text-decoration: none;
+            font-family: "Palatino", "Georgia", serif;
+        }
+        .aphorisms-center {
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 40px;
+            background: #fdfdfd;  
+        }
+
+        .aphorisms-center p {
+            font-size: 1.4em;
+            line-height: 1.7;
+            margin-bottom: 40px;
+            text-align: left; 
+            color: #333;
+            font-family: "Palatino", "Georgia", serif;
+        }
+</style>
+
+</style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">追随他的心</a>
+            <div class="nav-links">
+                <a href="index.html">主奴篇</a>
+                <a href="wisdom.html">认知篇</a>
+            </div>
+        </div>
+    </nav>
+
+<div id="text-container" class="aphorisms-center">
+
+<p style="font-size: 0.9em; color: #999; font-style: italic; margin-top: -20px;">前言：本页面文字，所有权全部归属于主人——<strong>追随我心DOM</strong>。奴才有幸能得到主人的教导。本页面是奴才整理的主人语录，奴才需认真体会，学习主人的喜好和思想，争取做一个对主人更有用的奴。</p>
+
+中国在办很多事儿的时候是不讲规矩的，一方面呢，权力可以用来寻租，可以办成很多事儿，另一方面呢，权利被收拾的时候也没什么规矩。所以呢，就会觉得这些贪官儿啊，或者是这些大官儿，说倒就倒下了。
+
+聪明不等于智慧，智慧里包含着豁达通透。
+
+思想的改造，自然会带来行为上的成效。
+
+所谓的信仰不是你迷信，就你觉得不管怎么样，这个你就觉得它是对的，那是迷信。所谓的信仰是一种心里面的一种坚持，就是你不一定能够达到那个目标，你也没有见过那个目标是什么样的，但是你心里面会坚持。你说它是一种彼岸也好，还是一个这个达到的一种境界也好，这个过程其实就是一个追求信仰的过程。这辈子得到了，其实也就圆满了。但是如果得不到呢？但是我这辈子好歹我还坚持了，我去努力了，我觉得也没什么可遗憾的。
+
+自由是很难的，好好珍惜吧。
+</div>
+
+</body>
+</html>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.getElementById('text-container'); 
+    const text = container.innerHTML;
+    
+    const paragraphs = text.split(/\n\s*\n/);
+    
+    container.innerHTML = paragraphs
+        .filter(p => p.trim().length > 0)
+        .map(p => `<p style="margin: 30px 0; font-size: 1.1em; line-height: 1.7;">${p.trim()}</p>`)
+        .join('');
+});
+</script>
